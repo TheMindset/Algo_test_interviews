@@ -1,4 +1,4 @@
-# But du repository : entrainement en vue de passer des tests d'entretiens
+# But du repository : entrainement en vue de passer des tests lors des entretiens
 
 Dans le langage de ton choix:
 

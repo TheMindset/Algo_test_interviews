@@ -10,29 +10,6 @@ require 'pry'
 
 # FIRST METHOD
 def fibonacci(n)
-  # arr = [1, 2]
-
-  # for i in arr
-  #   if i < n
-  #     arr.push(arr[i - 2] + arr[i - 1])
-  #   end
-  # end
-
-  # if n <= 1
-  #   return n
-  # else
-  #   fibonacci(n - 1) + fibonacci(n - 2)
-  # end
-
-  # # refacto
-  # n <= 1 ? n : (fibonacci(n - 1) + fibonacci(n - 2))
-
-  # # refacto x2 ==> don't work
-  n.times.inject([0, 1]) do |_init, obj|
-    obj << obj[-2] + obj[-1]
-  end
-
-  # # refacto x3
   n.times.each_with_object([0, 1]) do |_init, obj|
     obj << obj[-2] + obj[-1]
   end
